@@ -1,3 +1,15 @@
+# SPANC-websocket-shootout
+This is a clone of the original websocket-shootout repo by hashrocket, as documented by __Jack Christensen__ at his 
+blogpost here: https://hashrocket.com/blog/posts/websocket-shootout ...  
+IP connections between SPANC agents within or across machine boundaries would be a spectacularly bad idea, however until 
+proven otherwise this looks like a good repo of templates for concurrency in multiple languages.  The bias toward web-
+serving apps would seem apparent from lack of Python (just because it's always included in everything else).  But
+Rust is lookin pretty good ....
+
+11/01/2017 If you are reading this, it's likely that the code is currently unchanged from the fork other than 
+           this README.md file.
+--------------------------------------------------------------------------------------------------------------------
+
 # websocket-shootout
 
 This project is designed to compare websocket servers in multiple languages and frameworks and has a [companion blog post][post]. The servers all implement an extremely simple protocol with only two messages: `echo` and `broadcast`. An echo is returned to the sending client. A broadcast is sent to all connected clients. Both messages take a payload value that should be delivered to the appropriate destination.
